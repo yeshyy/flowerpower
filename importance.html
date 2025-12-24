@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Importance - Flower Power!</title>
+<link rel="icon" type="image/png" href="snoopyrose.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f9f5;
+      color: #333;
+      margin: 0;
+    }
+    header {
+      background-color: #88b396;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #f7e9e3;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #d46a8c;
+    }
+    nav {
+      background-color: #f7e9e3;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #d46a8c;
+    }
+	nav {
+  display: flex;
+  justify-content: center;
+  background-color: #f7e9e3;
+  padding: 10px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  padding: 0px 15px;
+}
+
+nav a:hover {
+  color: #d46a8c;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown a {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f7e9e3;
+  min-width: 160px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #d46a8c;
+  color: white;
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #d46a8c;
+	  
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li::before {
+      content: "🌸 ";
+      margin-right: 5px;
+    }
+	
+    .side-img {
+      position: absolute;
+      top: 150px;
+      width: 200px;
+	  height: 750px;
+      opacity: 1;
+      z-index: -1; /* stays behind text */
+    }
+    .left {
+      left: 10px;
+    }
+    .right {
+      right: 10px;
+    }
+header {
+  background-color: #88b396;
+  color: white;
+  padding: 20px;
+}
+header {
+  background-color: #88b396;
+  color: white;
+  padding: 20px 40px;
+}
+.header-flex {
+  display: flex;             
+  align-items: center;         
+  justify-content: center;
+  padding: 25px;
+  text-align: center;
+}
+
+.header-logo {
+  width: 80px; /* adjust size */
+  height: auto;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.header-text p {
+  margin: 5px 0 0 0;
+  font-size: 1em;
+  }
+.video-container {
+  display: flex;               /* centers content horizontally */
+  flex-direction: column;      /* stacks video + caption vertically */
+  align-items: center;         /* horizontal center */
+  margin: 10px auto;           /* vertical spacing and centering */
+  max-width: 650px;            /* limits container width */
+  padding: 10px;               /* inner spacing */
+  background-color: #f7f9f5;   /* matches page background */
+  border-radius: 20px;         /* rounded corners */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* subtle shadow */
+}
+
+.video-container video {
+  width: 95%;                 /* video fills container width */
+  height: auto;
+  border-radius: 20px;         /* match container rounding */
+}
+
+.text-box {
+  background-color: #fff7f9;     /* light pink background */
+  border-left: 5px solid #88b396; /* colored border for emphasis */
+  padding: 15px;                 /* inner spacing */
+  margin: 15px auto;             /* spacing between boxes */
+  max-width: 750px;              /* optional width limit */
+  border-radius: 10px;           /* rounded corners */
+  font-style: italic;            /* optional text style */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow */
+}
+.text-container {
+  background-color: #fff7f9;        /* light pink box */
+  padding: 30px;                     /* inner spacing */
+  margin: 35px auto;                 /* space around container */
+  max-width: 800px;                  /* limits width */
+  border-radius: 20px;               /* rounded corners */
+  font-size: 20px;                   /* readable text */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* subtle shadow */
+}
+.text-container ul {
+  padding-left: 20px;                /* indent list items */
+}
+.text-container li::before {
+  content: "🌸 ";                     
+  margin-right: 5px;
+}
+.bottom-images {
+  position: relative; /* container for absolute images */
+  height: 250px;      /* adjust according to your image height */
+}
+
+.bottom-img {
+  position: absolute;
+  bottom: 0;          /* aligns with bottom of this container */
+  width: 200px;       /* adjust size */
+  height: 750px;  
+}
+.bottom-img.left {
+  left: 10px;            /* sticks to left of container */
+}
+
+.bottom-img.right {
+  right: 10px;           /* sticks to right of container */
+}
+
+
+  </style>
+</head>
+<body>
+
+<img src="flowervine.png" class="side-img left" >
+<img src="flowervine.png" class="side-img right">
+
+<header class="header-flex">
+  <img src="snoopyflowers1.png" alt="Left Logo" class="header-logo">
+  <div class="header-text">
+    <h1>🌸 Flower Power! 🌸</h1>
+
+    <p>Discover the true beauty and meaning behind flowers</p>
+  </div>
+  <img src="snoopyflowers.png" alt="Right Logo" class="header-logo">
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="importance.html">Importance</a>
+
+  <!-- Botany & Signs of Meanings Drop-down -->
+  <div class="dropdown">
+    <a>Knowledge ▼</a>
+    <div class="dropdown-content">
+      <a href="botany.html">Botany</a>
+      <a href="signs&meanings.html">Signs & Meanings</a>
+    </div>
+  </div>
+
+  <a href="about.html">About</a>
+  <a href="funfacts.html">Fun Facts</a>
+</nav>
+  
+  <main>
+
+</div>
+
+
+  <h2><center>Why Flowers Matter:<center></h2>   
+  <p style="font-size: 20px;">Flowers play a critical role in both natural ecosystems and human culture. They’re not just beautiful — they’re essential for the planet and for us.</p>
+
+  <div class="video-container">
+  <video src="timelapse.mp4" autoplay loop muted controls></video> </div>
+  
+  <div class="text-container">
+  <ul>
+    <li>They help plants reproduce by attracting pollinators like bees and butterflies.</li>
+    <li>They’re used in medicine, cosmetics, teas, and even cooking.</li>
+    <li>They are symbols of joy, love, peace, remembrance, and celebration.</li>
+    <li>They improve mental well-being by reducing stress and bringing comfort.</li>
+    <li>They play an important role in biodiversity and a balanced environment.</li>
+  </ul>
+</div>
+
+<h2>Pollinators and Flowers:</h2>
+<p style="font-size: 20px; text-align: center; max-width: 900px; margin: auto;">
+Pollinators are essential for the survival of many plants, including the flowers we love. Below is a table showing some common pollinators, the flowers they visit, and fun facts about them!
+</p>
+
+<table style="width: 90%; margin: 30px auto; border-collapse: collapse; font-size: 18px;">
+  <th>
+    <tr style="background-color: #d46a8c; color: white;">
+      <th style="padding: 12px; border: 1px solid #ccc;">Pollinator</th>
+      <th style="padding: 12px; border: 1px solid #ccc;">Flower Examples</th>
+      <th style="padding: 12px; border: 1px solid #ccc;">Fun Fact</th>
+    </tr>
+  </th>
+  <tbody>
+    <tr style="background-color: #f7f0f2;">
+      <td style="padding: 10px; border: 1px solid #ccc;">Honey Bees</td>
+      <td style="padding: 10px; border: 1px solid #ccc;">Lavender, Sunflower, Rose, Clover</td>
+      <td style="padding: 10px; border: 1px solid #ccc;">Honey bees communicate with a “waggle dance” to tell others where flowers are!</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #ccc;">Bumblebees</td>
+      <td style="padding: 10px; border: 1px solid #ccc;">Bluebells, Foxglove, Tomato flowers</td>
+      <td style="padding: 10px; border: 1px solid #ccc;">Bumblebees are excellent pollinators in cooler climates because they can warm their bodies by vibrating their flight muscles.</td>
+    </tr>
+    <tr style="background-color: #f7f0f2;">
+      <td style="padding: 10px; border: 1px solid #ccc;">Butterflies</td>
+      <td style="padding: 10px; border: 1px solid #ccc;">Milkweed, Marigold, Zinnia, Lantana</td>
+      <td style="padding: 10px; border: 1px solid #ccc;">Butterflies prefer bright flowers and use their long proboscis to reach nectar.</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #ccc;">Hummingbirds</td>
+      <td style="padding: 10px; border: 1px solid #ccc;">Trumpet Vine, Fuchsia, Salvia, Cardinal Flower</td>
+      <td style="padding: 10px; border: 1px solid #ccc;">Hummingbirds can hover mid-air, allowing them to feed on tubular flowers efficiently.</td>
+    </tr>
+    <tr style="background-color: #f7f0f2;">
+      <td style="padding: 10px; border: 1px solid #ccc;">Moths</td>
+      <td style="padding: 10px; border: 1px solid #ccc;">Evening Primrose, Jasmine, Petunia</td>
+      <td style="padding: 10px; border: 1px solid #ccc;">Moths are nocturnal pollinators and are attracted to white or pale flowers with strong scents.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="font-size: 20px; text-align: center; max-width: 900px; margin: auto; margin-top: 20px;">
+<strong>Tip:</strong> Plant a variety of colorful flowers that bloom at different times to support pollinators all year round!
+</p>
+
+
+  </main>
+  <div class="bottom-images">
+  <img src="flowervine.png" class="bottom-img left">
+  <img src="flowervine.png" class="bottom-img right">
+</div>
+
+  <footer>
+    <p>&copy; 2025 Flower Power | Nature's silent messengers</p>
+  </footer>
+</body>
+</html>

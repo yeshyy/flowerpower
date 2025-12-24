@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Botany - Flower Power!</title>
+  <link rel="icon" type="image/png" href="snoopyrose.png">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #88b396;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background-color: #f7e9e3;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #d46a8c;
+    }
+	nav {
+  display: flex;
+  justify-content: center;
+  background-color: #f7e9e3;
+  padding: 10px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  padding: 0px 15px;
+}
+
+nav a:hover {
+  color: #d46a8c;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown a {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f7e9e3;
+  min-width: 160px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #d46a8c;
+  color: white;
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    h2 {
+      color: #d46a8c;
+      text-align: center;
+    }
+      h1 {
+      color: white;
+      text-align: center;
+    }
+    .diagram-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .diagram-row img {
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 400px;
+      max-width: 100%;
+    }
+    .diagram-text {
+      max-width: 500px;
+      text-align: left;
+    }
+    .diagram-text ul {
+      font-size: 17px;
+      line-height: 1.6;
+      padding-left: 0;
+      list-style-position: inside;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+	header {
+  background-color: #88b396;
+  color: white;
+  padding: 20px;
+}
+header {
+  background-color: #88b396;
+  color: white;
+  padding: 20px 40px;
+}
+.header-flex {
+  display: flex;             
+  align-items: center;         
+  justify-content: center;
+  padding: 25px;
+  text-align: center;
+}
+
+.header-logo {
+  width: 80px; /* adjust size */
+  height: auto;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.header-text p {
+  margin: 5px 0 0 0;
+  font-size: 1em;
+  }
+      .side-img {
+      position: absolute;
+      top: 150px;
+      width: 200px;
+	  height: 750px;
+      opacity: 1;
+      z-index: -1; /* stays behind text */
+    }
+    .left {
+      left: 10px;
+    }
+    .right {
+      right: 10px;
+    }
+	.bottom-images {
+  position: relative; /* container for absolute images */
+  height: 80px;      /* adjust according to your image height */
+}
+
+.bottom-img {
+  position: absolute;
+  bottom: 0;          /* aligns with bottom of this container */
+  width: 700;       /* adjust size */
+  height: auto;
+}
+
+.bottom-img.left {
+  left: 0;            /* sticks to left of container */
+}
+
+.bottom-img.right {
+  right: 0;           /* sticks to right of container */
+  }
+.botany-table {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+.botany-table th,
+.botany-table td {
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.botany-table th {
+  background-color: #88b396;
+  color: white;
+}
+
+.botany-table tr:nth-child(even) {
+  background-color: #f7f9f5;
+}
+
+.botany-table tr:hover {
+  background-color: #fff0f4;
+}
+.diagram-left {
+  max-width: 420px;
+  text-align: center;
+}
+
+.diagram-left img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.image-info {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.diagram-right {
+  max-width: 500px;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+<img src="flowervine.png" class="side-img left" >
+<img src="flowervine.png" class="side-img right">
+
+<header class="header-flex">
+  <img src="snoopyflowers1.png" alt="Left Logo" class="header-logo">
+  <div class="header-text">
+    <h1>🌸 Flower Power! 🌸</h1>
+    <p>Discover the true beauty and meaning behind flowers</p>
+  </div>
+  <img src="snoopyflowers.png" alt="Right Logo" class="header-logo">
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="importance.html">Importance</a>
+
+  <!-- Botany & Signs of Meanings Drop-down -->
+  <div class="dropdown">
+    <a>Knowledge ▼</a>
+    <div class="dropdown-content">
+      <a href="botany.html">Botany</a>
+      <a href="signs&meanings.html">Signs & Meanings</a>
+    </div>
+  </div>
+
+  <a href="about.html">About</a>
+  <a href="funfacts.html">Fun Facts</a>
+</nav>
+
+  <main>
+
+    <h2>🌸 Parts of a Perfect Flower</h2>
+
+<div class="diagram-row">
+
+  <!-- LEFT COLUMN: image + text -->
+  <div class="diagram-left">
+    <img src="flowerdiagram.jpg" alt="Labeled Flower Diagram">
+
+    <p class="image-info">
+      This diagram illustrates the main parts of a perfect flower.
+      Each structure works together to allow pollination, fertilization,
+      and the production of seeds and fruits.
+    </p>
+
+    <p class="image-info">
+      Understanding these parts helps explain how flowers reproduce
+      and why pollinators like bees and butterflies are essential.
+    </p>
+  </div>
+
+  <!-- RIGHT COLUMN: table -->
+  <div class="diagram-right">
+    <table class="botany-table">
+      <tr>
+        <th>Flower Part</th>
+        <th>Function</th>
+      </tr>
+      <tr>
+        <td>Petal</td>
+        <td>Attracts pollinators using color and scent</td>
+      </tr>
+      <tr>
+        <td>Sepal</td>
+        <td>Protects the flower bud before it blooms</td>
+      </tr>
+      <tr>
+        <td>Stamen</td>
+        <td>Male part that produces pollen</td>
+      </tr>
+      <tr>
+        <td>Anther</td>
+        <td>Produces pollen grains</td>
+      </tr>
+      <tr>
+        <td>Filament</td>
+        <td>Supports the anther</td>
+      </tr>
+      <tr>
+        <td>Pistil (Carpel)</td>
+        <td>Female part that contains the ovary</td>
+      </tr>
+      <tr>
+        <td>Stigma</td>
+        <td>Receives pollen during pollination</td>
+      </tr>
+      <tr>
+        <td>Ovary</td>
+        <td>Holds ovules that become seeds</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+	
+
+  <div class="fact-box" style="background-color: #fff7f9; border-left: 5px solid #88b396; padding: 15px; margin-top: 30px; font-style: italic; max-width: 800px; margin-left: auto; margin-right: auto;">
+  🌿 <strong>Fun Fact:</strong> Did you know that flowers are actually the reproductive organs of flowering plants? 
+  In fact, every flower is designed to attract pollinators like bees, butterflies, or even bats — not just to look pretty! Without flowers, fruits and seeds wouldn't exist.
+</div>
+  
+  </main>
+  <div class="bottom-images">
+  <img src="flowervine.png" class="bottom-img left">
+  <img src="flowervine.png" class="bottom-img right">
+</div>
+  <footer>
+    <p>&copy; 2025 Flower Power | Made with love, petals, and purpose ✨</p>
+  </footer>
+
+</body>
+</html>
